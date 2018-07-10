@@ -1,0 +1,22 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "Building RESTful web APIs with Node and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donkeykong91/NodeJS---RESTful-Web-API-with-Node-and-Express.git"
+  },
+  "author": "Daryl Occ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donkeykong91/NodeJS---RESTful-Web-API-with-Node-and-Express/issues"
+  },
+  "homepage": "https://github.com/donkeykong91/NodeJS---RESTful-Web-API-with-Node-and-Express#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
