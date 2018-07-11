@@ -1,3 +1,16 @@
+import { 
+
+    addNewContact, 
+
+    getContacts, 
+
+    getContactWithID, 
+
+    updateContact, 
+
+} from "../controllers/crmController";
+
+
 const routes = function (app) {
 
     app.route('/contact')
@@ -10,25 +23,16 @@ const routes = function (app) {
 
             next();
 
-        }, function (req, res) {
-            
-            res.send("GET request successful!!!");
+        }, getContacts)
 
-        })   
-        
-        .post(function (req, res) {
+        .post(addNewContact);
 
-            res.send("POST request successful!!!");
-
-        });
 
     app.route('/contact/:contactId')
 
-        .put(function (req, res) {
+        .get(getContactWithID)
 
-            res.send("POST request successful!!!");
-
-        })   
+        .put(updateContact)   
         
         .delete(function (req, res) {
 
@@ -36,5 +40,6 @@ const routes = function (app) {
 
         });
 }
+
 
 export default routes;
