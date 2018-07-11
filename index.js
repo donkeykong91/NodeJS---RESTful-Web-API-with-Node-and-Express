@@ -29,6 +29,9 @@ app.use(bodyParser.json());
 routes(app);
 
 
+app.use(express.static("public"));
+
+
 app.get('/', function (req, res) {
     
     res.send(`Node and express server is running on port ${PORT}`);
