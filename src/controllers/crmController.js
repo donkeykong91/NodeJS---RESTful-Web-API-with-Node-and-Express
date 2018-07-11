@@ -85,3 +85,21 @@ export const updateContact = function (req, res) {
     });
 
 }
+
+
+export const deleteContact = function (req, res) {
+
+    Contact.remove({ _id: req.params.contactId }, function (err, contact) {
+
+        if (err) {
+
+            res.send(err);
+
+        }
+
+
+        res.json({ message: "Successfully deleted contact"});
+
+    });
+
+}
